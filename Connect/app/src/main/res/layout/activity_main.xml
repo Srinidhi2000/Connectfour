@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:id="@+id/layout"
+    android:background="@drawable/wood5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/hor_layout">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="END GAME"
+            android:id="@+id/endgame"
+            android:onClick="endgame"
+            android:background="#1a237e"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:id="@+id/player"/>
+
+
+        <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="UNDO"
+        android:id="@+id/undo"
+        android:onClick="undo"
+            android:background="#1a237e"
+            android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+     </RelativeLayout>
